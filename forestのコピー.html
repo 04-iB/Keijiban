@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="forest.css">
+    <link rel="stylesheet" href="forest.js">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7484f657a.js" crossorigin="anonymous"></script>
+    <title>Forest</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--ロゴだよ-->
+        <div class="header-left">
+            <img src="forest_img/logo.png" alt="ロゴ画像です。" class="logo">
+        </div>
+        <!--検索だよ-->
+        <div class="header-right">
+            <form id="form1" action="自分のサイトURL" method="get">
+                <!--検索欄だよ-->
+                <input id="k_row" id="search" name="s" type="text"  placeholder="&#xf002; 検索" class="fas">
+                <!--検索ボタンだよ-->
+                <input id="k_btn" type="submit" value="検索">
+            </form>
+            <div class="dropdown">
+                <!--カテゴリだよ-->
+                <button type="button" id="dropdown1" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">カテゴリ</button>
+                <div class="dropdown-menu" aria-labelledby="dropdown1">
+                    <a class="dropdown-item" href="#">はやしくん</a>
+                    <a class="dropdown-item" href="#">好き</a>
+                    <a class="dropdown-item" href="#">大好き</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-end-->
+
+    <!--Select-->
+    <div class="select">
+        <!--ランキングボタンだよ-->
+        <div id="rank">
+            <a href="#">ランキング</a>
+        </div>
+        <!--新着ボタンだよ-->
+        <div id="new">
+            <a href="#">新着</a>
+        </div>
+    </div>
+    <!--Select-end-->
+
+    <hr>
+
+    <!--Post-->
+    <div class="post">
+        <a  href="#" class="post_inner"></a>
+    </div>
+    <!--Post-end-->
+
+    <!--Cards-->
+    <duv class="cards">
+        <!--はやしくんカードだよ-->
+        <div id="rank_inner" class="show">
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="number">
+                <div class="number_inner">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--大好きカードだよ-->
+        <div id="new_inner" class="disappear">
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+                    
+                <div class="card-body">
+                    <div class="carder">
+                        <div class="card-left">
+                            <img src="forest_img/hayashikun..png" alt="">
+                        </div>
+                        <div class="card-right">
+                            <h5 class="card-title">ユーザーネーム</h5>
+                            <div class="card-icon">
+                                <a href="#" class="comment"></a>
+                                <a href="#" class="good"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ここに題名</h3>
+                    <div class="open-btn">
+                        <a href="#" class="btn">スレッドを開く</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="number">
+                <div class="number_inner">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+        <!--new-inner-end-->
+    </duv>
+    <!--Cards-end-->
+    
+
+
+    <script src="forest.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,703 @@
+/*--Header--*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--左上のロゴ--*/
+.logo{
+    border-radius: 50%;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+/*--検索欄--*/
+#k_row::placeholder{
+    color: rgb(85, 44, 19);
+}
+/*--検索アイコン--*/
+.search{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*--検索ボタン--*/
+#k_btn{
+    background-color: #E7D0A9;
+    color:rgb(85, 44, 19);
+    font-weight: bold;
+}
+/*--カテゴリ--*/
+#dropdown1{
+    background-color: #E7D0A9;
+    border: none;
+    color:rgb(85, 44, 19);
+    font-weight: bold;
+}
+/*--Header-end*/
+
+hr{
+    border-bottom: 3px solid rgba(85, 44, 19,0.8);
+}
+
+/*--Select--*/
+.select{
+    display: flex;
+    justify-content: center;
+}
+/*--ランキンング・新着ボタン--*/
+#rank,#new{
+    text-align: center;
+    border-radius: .5rem;
+    font-weight: bold;
+    background-color: #E7D0A9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    
+}
+#rank a,#new a{
+    font-weight: bold;
+    text-decoration:none;
+    color:rgb(85, 44, 19);
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+#rank a:hover,#new a:hover{
+    color:rgb(33, 100, 80);
+    text-decoration: none;
+    
+}
+#rank:active,#new:active{
+    box-shadow: none;
+}
+/*--Select-end--*/
+
+/*--Post--*/
+/*--投稿ボタン--*/
+.post{
+    position: fixed;  
+    z-index: 2;
+    
+}
+.post_inner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    background: #E7D0A9;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.post_inner:hover{
+    text-decoration: none;
+    opacity: .9;
+}
+.post_inner::before {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-left: 15px solid #E7D0A9;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.post_inner::after{
+    content: "投稿";
+    font-weight: bold;
+    color:rgb(85, 44, 19);
+}
+/*--Post-end--*/
+
+/*--Cards--*/
+/*--スレッドカード--*/
+.card-body{
+    border: 2px solid rgba(209, 121, 39, 0.3);
+}
+.card-body .btn{
+    background-color: #E7D0A9;
+    color: rgb(85, 44, 19);
+    font-weight: bold;
+}
+.disappear{
+    display: none;
+}
+.show{
+    display: block;
+}
+.carder{
+    display: flex;
+    border: none;
+}
+.card-left{
+    margin-right: 2rem;
+}
+.card-body img{
+    border-radius: 50%;
+    background-color: #E7D0A9;
+    object-fit: cover;
+}
+.card-body h5{
+    font-weight: bold;
+    color: rgb(85, 44, 19);
+}
+.card-icon{
+    display: flex;
+}
+.comment{
+    position: relative;
+    background-color: #E7D0A9;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+.comment::after{
+    content: "===";
+    position: absolute;
+    top: .8rem;
+    left: .5rem;
+
+    font-weight: bold;
+    color:rgb(85, 44, 19);
+}
+.comment::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -10px;
+    bottom: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 15px 2px 0 10px;
+    border-color: #E7D0A9 transparent transparent transparent;
+}
+.good{
+    position: relative;
+    background-color: #E7D0A9;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.good::after{
+    content: "いいね";
+    font-size: 80%;
+    width: 60px;
+    position: absolute;
+    top: 1rem;
+    left: .4rem;
+
+    font-weight: bold;
+    color:rgb(85, 44, 19);
+}
+.good::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -10px;
+    bottom: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 15px 2px 0 10px;
+    border-color: #E7D0A9 transparent transparent transparent;
+}
+.comment:hover,.good:hover{
+    opacity: .8;
+}
+.card-body h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card-body .btn{
+    margin: 0 auto;
+    width: 100%;
+}
+/*--Cards-end--*/
+
+/*--Number--*/
+/*--下の番号だよ--*/
+.number_inner{
+    display: flex;
+    justify-content: space-around;
+}
+.number_inner>p{
+    color:rgb(85, 44, 19);
+}
+/*--Number-end--*/
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1150px){
+
+    /*--Header--*/
+    /*--左上のロゴ--*/
+    .logo{
+        width: 8rem;
+        margin: 1rem;
+    }
+    form{
+        margin-right: 2rem;
+    }
+    .dropdown{
+        margin-right: 3rem;
+    }
+    /*--検索欄--*/
+    #k_row{
+        width: 20rem;
+        padding: .5rem;
+        border: 3px solid #E7D0A9;
+    }
+    /*--検索ボタン--*/
+    #k_btn{
+        padding: .3rem;
+    }
+    /*--Header-end--*/
+    
+    hr{
+        margin: 0 2rem;
+    }
+    
+    /*--Select--*/
+    .select{
+        margin: 5rem 0;
+    }
+    /*--ランキンング・新着ボタン--*/
+    #rank,#new{
+        margin:0 10rem;
+        padding: 1.5rem 3rem;
+        width: 100rem;        
+    }
+    #rank a,#new a{
+        font-size: 22px;
+    }
+    /*--Select-end--*/
+    
+    /*--Post--*/
+    .post{
+        bottom: .5rem;
+        right: .5rem;
+        
+    }
+    .post_inner{
+        margin: 1.5em 15px 1.5em 0;
+        padding: 0 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 20px;
+    }
+    .post_inner::before {
+        bottom: -8px;
+        right: -8px;
+        margin-top: -15px;
+    }
+    .post a{
+        font-size: 25px;
+    }
+    /*--Post-end--*/
+    
+    /*--Cards--*/
+    .card-box{
+        display: flex;
+    }
+    .card-body{
+        width: 30%;
+        margin: 3rem;
+        height: 100%;
+    }
+    .card-body img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 1rem;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    /*--Cards-end--*/
+    
+    /*--Number--*/
+    .number{
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    .number_inner{
+        width: 20rem;
+    }
+    .number_inner>p{
+        font-size: 25px;
+    }
+    /*--Number-end--*/
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1150px){
+/*--Header--*/
+    /*--左上のロゴ--*/
+    .logo{
+        width: 8rem;
+        margin: 1rem;
+    }
+    form{
+        margin-right: 3rem;
+    }
+    .dropdown{
+        margin-right: 3rem;
+    }
+    /*--検索欄--*/
+    #k_row{
+        width: 20rem;
+        padding: .5rem;
+        border: 3px solid #E7D0A9;
+        margin: 0 auto;
+    }
+    /*--検索ボタン--*/
+    #k_btn{
+        padding: .3rem;
+    }
+    /*--Header-end--*/
+    
+    hr{
+        margin: 0 2rem;
+    }
+    
+    /*--Select--*/
+    .select{
+        margin: 5rem 0;
+    }
+    /*--ランキンング・新着ボタン--*/
+    #rank,#new{
+        margin:0 5rem;
+        padding: 1.5rem 3rem;
+        width: 100rem;        
+    }
+    #rank a,#new a{
+        font-size: 20px;
+    }
+    /*--Select-end--*/
+    
+    /*--Post--*/
+    .post{
+        bottom: .5rem;
+        right: .5rem;
+        
+    }
+    .post_inner{
+        margin: 1.5em 15px 1.5em 0;
+        padding: 0 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 20px;
+    }
+    .post_inner::before {
+        bottom: -8px;
+        right: -8px;
+        margin-top: -15px;
+    }
+    .post a{
+        font-size: 25px;
+    }
+    /*--Post-end--*/
+    
+    /*--Cards--*/
+    .card-box{
+        margin: 0 3rem;
+
+    }
+    .card-body{
+        width: 100%;
+        height: 100%;
+        margin: 3rem 0;
+        
+    }
+    .carder{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .card-body img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 1rem;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .card-body .open-btn{
+        width: 300px;
+        margin: 0 auto;
+    }
+    /*--Cards-end--*/
+    
+    /*--Number--*/
+    .number{
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    .number_inner{
+        width: 20rem;
+    }
+    .number_inner>p{
+        font-size: 25px;
+    }
+    /*--Number-end--*/
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:630px) and (max-width:768px){
+    /*--Header--*/
+    /*--左上のロゴ--*/
+    .logo{
+        width: 8rem;
+        margin: 1rem;
+    }
+    form{
+        margin-right: 2rem;
+    }
+    .dropdown{
+        margin-right: 3rem;
+    }
+    /*--検索欄--*/
+    #k_row{
+        width: 15rem;
+        padding: .5rem;
+        border: 3px solid #E7D0A9;
+        margin: 0 auto;
+    }
+    /*--検索ボタン--*/
+    #k_btn{
+        padding: .3rem;
+    }
+    /*--Header-end--*/
+    
+    hr{
+        margin: 0 2rem;
+    }
+    
+    /*--Select--*/
+    .select{
+        margin: 5rem 0;
+    }
+    /*--ランキンング・新着ボタン--*/
+    #rank,#new{
+        margin:0 2rem;
+        padding: 1.5rem 3rem;
+        width: 100rem;        
+    }
+    #rank a,#new a{
+        font-size: 22px;
+    }
+    /*--Select-end--*/
+    
+    /*--Post--*/
+    .post{
+        bottom: .5rem;
+        right: .5rem;
+        
+    }
+    .post_inner{
+        margin: 1.5em 15px 1.5em 0;
+        padding: 0 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 20px;
+    }
+    .post_inner::before {
+        bottom: -8px;
+        right: -8px;
+        margin-top: -15px;
+    }
+    .post a{
+        font-size: 25px;
+    }
+    /*--Post-end--*/
+    
+    /*--Cards--*/
+    .card-box{
+        margin: 0 3rem;
+    }
+    .card-body{
+        width: 100%;
+        height: 100%;
+        margin: 3rem 0;
+    }
+    .card-body img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 1rem;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    /*--Cards-end--*/
+    
+    /*--Number--*/
+    .number{
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    .number_inner{
+        width: 20rem;
+    }
+    .number_inner>p{
+        font-size: 25px;
+    }
+    /*--Number-end--*/
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:630px) {
+    /*--Header--*/
+    /*--左上のロゴ--*/
+    .logo{
+        width: 7rem;
+        margin: 1rem;
+    }
+    form{
+        width: 300px;
+        max-width: 100%;
+        text-align: right;
+        margin-right: 2rem;
+    }
+    #dropdown1{
+        display: none;
+    }
+    /*--検索欄--*/
+    #k_row{
+        width: 15rem;
+        padding: .5rem;
+        border: 3px solid #E7D0A9;
+        margin: 0 auto;
+    }
+    /*--検索ボタン--*/
+    #k_btn{
+        padding: .3rem;
+    }
+    /*--Header-end--*/
+    
+    hr{
+        margin: 0 2rem;
+    }
+    
+    /*--Select--*/
+    .select{
+        margin: 5rem 0;
+    }
+    /*--ランキンング・新着ボタン--*/
+    #rank,#new{
+        margin:0 2rem;
+        padding: 1rem 1rem;
+        width: 100rem;   
+        box-shadow: none;     
+    }
+    #rank a,#new a{
+        font-size: 22px;
+    }
+    /*--Select-end--*/
+    
+    /*--Post--*/
+    .post{
+        bottom: .5rem;
+        right: .5rem;
+        
+    }
+    .post_inner{
+        margin: 1.5em 15px 1.5em 0;
+        padding: 0 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 20px;
+    }
+    .post_inner::before {
+        bottom: -8px;
+        right: -8px;
+        margin-top: -15px;
+    }
+    .post a{
+        font-size: 25px;
+    }
+    /*--Post-end--*/
+    
+    /*--Cards--*/
+    .card-box{
+        margin: 0 3rem;
+    }
+    .card-body{
+        width: 100%;
+        height: 100%;
+        margin: 3rem 0;
+    }
+    .card-body img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 1rem;
+    }
+    .card-icon{
+        width: 100%;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .card-body .btn{
+        padding: 1rem 0;
+    }
+    /*--Cards-end--*/
+    
+    /*--Number--*/
+    .number{
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    .number_inner{
+        width: 20rem;
+    }
+    .number_inner>p{
+        font-size: 25px;
+    }
+    /*--Number-end--*/
+}
